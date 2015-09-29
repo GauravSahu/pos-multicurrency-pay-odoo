@@ -11,8 +11,6 @@ QWeb = openerp.web.qweb,
      	 
     	  getPaidTotal: function() {
             return (this.get('paymentLines')).reduce((function(sum, paymentLine) {
-                //console.dir(this.getSelectedLine());
-               
                 if(paymentLine.cashregister.currency[1]==='USD'){
                         
                         sum = sum + round_di(parseFloat(parseFloat(paymentLine.get_amount()) / 0.074) || 0, 2);
