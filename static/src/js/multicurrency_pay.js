@@ -22,7 +22,7 @@ QWeb = openerp.web.qweb,
                         console.log(sum);
                         return sum;
                 }
-               // return sum + paymentLine.get_amount();
+              
             }), 0);
         },
     });
